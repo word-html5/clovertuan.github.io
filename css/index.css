@@ -94,6 +94,7 @@ body {
   .project-card > .ctnWrap {
     flex: 1; }
     .project-card > .ctnWrap > .title {
+      font-weight: 600;
       font-size: 28px;
       line-height: 40px; }
     .project-card > .ctnWrap > .desc {
@@ -154,17 +155,23 @@ body {
   .article > .title {
     font-size: 28px;
     line-height: 40px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: 600; }
   .article > .sub {
     opacity: .5;
     margin-bottom: 20px; }
-  .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5, .article > .content strong {
-    font-weight: bold; }
+  .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px; }
   .article > .content p {
-    margin-bottom: 10px; }
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px; }
   .article > .content pre, .article > .content .highlight {
     overflow: auto;
     padding: 0;
+    margin-bottom: 15px;
     color: #333;
     background: #f8f8f8; }
     .article > .content pre .gutter, .article > .content .highlight .gutter {
@@ -175,9 +182,9 @@ body {
     .article > .content pre .code, .article > .content .highlight .code {
       padding: 0 10px; }
   .article > .content ul, .article > .content ol {
-    margin: 10px 0; }
+    margin: 15px 0; }
     .article > .content ul > li, .article > .content ol > li {
-      padding-left: 20px;
+      padding-left: 30px;
       position: relative; }
       .article > .content ul > li::before, .article > .content ol > li::before {
         content: '';
@@ -191,11 +198,21 @@ body {
         background-color: #444; }
   .article > .content a {
     color: #f0534e; }
+  .article > .content strong {
+    font-weight: 600; }
+  .article > .content figure > img {
+    display: block; }
+  .article > .content figcaption {
+    font-size: 14px; }
   .article > .content blockquote {
-    margin: 10px 0;
-    padding: 0 15px;
-    color: #666;
-    border-left: 4px solid #ddd; }
+    border-left: 4px solid #ddd;
+    color: #7a7a7a;
+    border-left: 5px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px; }
+    .article > .content blockquote > :last-child {
+      margin-bottom: 0; }
   .article > .content * {
     max-width: 100%; }
   .article > footer {
