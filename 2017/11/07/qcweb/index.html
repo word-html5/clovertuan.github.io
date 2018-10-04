@@ -3,14 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-
-  
   <title>组件化的运用—健身房管理系统Web改版小结 | Clover Tuan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="青橙科技最主要、也是最早的产品——「青橙健身房管理系统」在10月进行了一次改版，也是自2014年诞生以来的第一次改版，在这次改版中，运用到了「组件化设计」的思路，对这个名词算是有了更多的认识。 01.项目背景▼ 青橙健身房管理系统Web是什么？ 青橙健身房管理系统Web是一款为健身房工作人员提供服务的SaaS产品，帮助他们进行健身房的日常管理工作，类似于tower、钉钉等产品。 ▼ 为什么要改版？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="组件化的运用—健身房管理系统Web改版小结">
-<meta property="og:url" content="http://clovertuan.github.io/2017/11/07/qcweb/index.html">
+<meta property="og:url" content="https://clovertuan.github.io/2017/11/07/qcweb/index.html">
 <meta property="og:site_name" content="Clover Tuan">
 <meta property="og:description" content="青橙科技最主要、也是最早的产品——「青橙健身房管理系统」在10月进行了一次改版，也是自2014年诞生以来的第一次改版，在这次改版中，运用到了「组件化设计」的思路，对这个名词算是有了更多的认识。 01.项目背景▼ 青橙健身房管理系统Web是什么？ 青橙健身房管理系统Web是一款为健身房工作人员提供服务的SaaS产品，帮助他们进行健身房的日常管理工作，类似于tower、钉钉等产品。 ▼ 为什么要改版？">
 <meta property="og:locale" content="default">
@@ -32,78 +30,64 @@
 <meta name="twitter:description" content="青橙科技最主要、也是最早的产品——「青橙健身房管理系统」在10月进行了一次改版，也是自2014年诞生以来的第一次改版，在这次改版中，运用到了「组件化设计」的思路，对这个名词算是有了更多的认识。 01.项目背景▼ 青橙健身房管理系统Web是什么？ 青橙健身房管理系统Web是一款为健身房工作人员提供服务的SaaS产品，帮助他们进行健身房的日常管理工作，类似于tower、钉钉等产品。 ▼ 为什么要改版？">
 <meta name="twitter:image" content="https://github.com/CloverTuan/Markdown_Images/raw/master/QCWeb-redesign/%E5%9B%BE1-%E7%B3%BB%E7%BB%9F%E4%B8%8D%E8%B6%B3.png">
   
-    <link rel="alternate" href="/atom.xml" title="Clover Tuan" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
-<body>
+<body style="
+
+  background-color: #eff0f6
+
+
+">
   <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Clover Tuan</a>
-      </h1>
+    <nav id="nav">
+  <a href="/" class="title">Clover Tuan</a>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="https://github.com/esappear || github" class="nav-icn">GitHub</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+    <div class="menu">
+      
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+            <a href="/project" class="nav-menu ">PROJECT</a>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+            <a href="/stuff" class="nav-menu ">STUFF</a>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+            <a href="/archives" class="nav-menu ">ARCHIVE</a>
+          
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          
+            <a href="/about" class="nav-menu ">ABOUT</a>
+          
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://clovertuan.github.io"></form>
-      </div>
+      
     </div>
   </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-qcweb" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/07/qcweb/" class="article-date">
-  <time datetime="2017-11-06T16:00:00.000Z" itemprop="datePublished">2017-11-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Projects/">Projects</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      组件化的运用—健身房管理系统Web改版小结
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>青橙科技最主要、也是最早的产品——「青橙健身房管理系统」在10月进行了一次改版，也是自2014年诞生以来的第一次改版，在这次改版中，运用到了「组件化设计」的思路，对这个名词算是有了更多的认识。</p>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">组件化的运用—健身房管理系统Web改版小结</h2>
+  <p class="sub">Nov 7, 2017</p>
+  <article class="content">
+    <p>青橙科技最主要、也是最早的产品——「青橙健身房管理系统」在10月进行了一次改版，也是自2014年诞生以来的第一次改版，在这次改版中，运用到了「组件化设计」的思路，对这个名词算是有了更多的认识。</p>
 <h2 id="01-项目背景"><a href="#01-项目背景" class="headerlink" title="01.项目背景"></a>01.项目背景</h2><p><strong>▼ 青橙健身房管理系统Web是什么？</strong></p>
 <p>青橙健身房管理系统Web是一款为健身房工作人员提供服务的SaaS产品，帮助他们进行健身房的日常管理工作，类似于tower、钉钉等产品。</p>
 <p><strong>▼ 为什么要改版？</strong></p>
@@ -165,131 +149,35 @@
 </ul>
 <p>此次的改版取得了一定的效果，但并不完整，系统中仍然存在许多旧的页面，希望在接下来的迭代中可以对旧页面从结构和逻辑上思考更多，而不是仅仅停留在视觉和交互的层面；同时也需要学会利用数据，有针对性的解决实际问题。</p>
 
+  </article>
+  <footer class="f-cf">
+    
+      <a href="2018/09/19/chinese-calendar/" class="link f-fl">⟵四季插画日历</a>
+    
+    
+      <a href="2017/08/16/app-ads-launch-screen/" class="link f-fr">一张图搞定APP启动页广告⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  d.guangying@foxmail.com
+  
+    
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://clovertuan.github.io/2017/11/07/qcweb/" data-id="cjmtb52yl000c2b29vdmov57t" class="article-share-link">Share</a>
+        · <a href="https://github.com/esappear || github" class="nav-icn">GitHub</a>
       
+    
       
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-    <a href="/2018/09/19/chinese-calendar/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          四季插画日历
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/08/16/app-ads-launch-screen/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">一张图搞定APP启动页广告</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
+      
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Design/">Design</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Stuffs/">Stuffs</a></li></ul>
-    </div>
-  </div>
-
-
-  
+      
     
-
-  
+      
     
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/09/19/chinese-calendar/">四季插画日历</a>
-          </li>
-        
-          <li>
-            <a href="/2017/11/07/qcweb/">组件化的运用—健身房管理系统Web改版小结</a>
-          </li>
-        
-          <li>
-            <a href="/2017/08/16/app-ads-launch-screen/">一张图搞定APP启动页广告</a>
-          </li>
-        
-          <li>
-            <a href="/2015/12/13/web-form-design/">Web表单设计的艺术</a>
-          </li>
-        
-          <li>
-            <a href="/2015/05/20/why-blog/">用Jekyll建立Github博客</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Clover Tuan<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+  <span class="f-fr">All rights reserved @Clover Tuan</span>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
   </div>
 </body>
 </html>

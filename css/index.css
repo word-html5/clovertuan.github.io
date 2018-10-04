@@ -1,0 +1,236 @@
+@import url(reset.css);
+#container {
+  max-width: 1080px;
+  margin: 90px auto 75px;
+  padding: 0 15px; }
+
+#panel {
+  background-color: white; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+  a:hover {
+    opacity: .7; }
+
+body {
+  font-family: "PingFang SC"; }
+
+.f-fl {
+  float: left; }
+
+.f-fr {
+  float: right; }
+
+.f-cf::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+#nav {
+  margin-bottom: 64px; }
+  #nav > .title {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 53px;
+    color: #333;
+    font-family: MaturaMTScriptCapitals; }
+    #nav > .title:hover {
+      opacity: .7; }
+  #nav > .ctnWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #nav > .ctnWrap > .menu {
+      min-width: 320px; }
+  #nav .nav-menu {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    margin-left: 24px; }
+    #nav .nav-menu:first-child {
+      margin-left: 0; }
+    #nav .nav-menu.z-active {
+      position: relative; }
+      #nav .nav-menu.z-active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        background-color: #333; }
+    @media screen and (max-width: 800px) {
+      #nav .nav-menu {
+        margin-left: 10px;
+        font-size: 18px; } }
+
+#footer {
+  margin-top: 80px;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8; }
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  margin: 40px 0;
+  background-color: white;
+  color: #333; }
+  .project-card > .imgWrap {
+    width: 320px;
+    height: 240px;
+    margin-right: 40px;
+    background-color: #f8f8f8; }
+    .project-card > .imgWrap > img {
+      width: 100%;
+      height: 100%; }
+  .project-card > .ctnWrap {
+    flex: 1; }
+    .project-card > .ctnWrap > .title {
+      font-size: 28px;
+      line-height: 40px; }
+    .project-card > .ctnWrap > .desc {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 15px; }
+    .project-card > .ctnWrap > .sub {
+      font-size: 16px;
+      line-height: 30px;
+      opacity: .5; }
+  .project-card:hover {
+    opacity: 1; }
+    .project-card:hover > .ctnWrap > .title {
+      color: #f0534e; }
+  .project-card.project-card-continuous {
+    flex-direction: row-reverse;
+    margin: 0;
+    position: relative; }
+    .project-card.project-card-continuous > .imgWrap {
+      margin-right: 0;
+      margin-left: 40px; }
+    .project-card.project-card-continuous::after {
+      content: '';
+      position: absolute;
+      left: 100px;
+      right: 100px;
+      bottom: 0;
+      height: 1px;
+      background-color: #eee; }
+    @media screen and (max-width: 800px) {
+      .project-card.project-card-continuous {
+        flex-direction: column;
+        padding: 20px; }
+        .project-card.project-card-continuous > .imgWrap {
+          margin-left: 0;
+          margin-bottom: 20px; }
+        .project-card.project-card-continuous::after {
+          left: 20px;
+          right: 20px; } }
+  @media screen and (max-width: 800px) {
+    .project-card {
+      flex-direction: column;
+      padding: 20px; }
+      .project-card > .imgWrap {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%; } }
+
+.article {
+  margin: 64px 0 80px;
+  padding: 80px 100px 0;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  line-height: 30px; }
+  .article > .title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px; }
+  .article > .sub {
+    opacity: .5;
+    margin-bottom: 20px; }
+  .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5, .article > .content strong {
+    font-weight: bold; }
+  .article > .content p {
+    margin-bottom: 10px; }
+  .article > .content pre, .article > .content .highlight {
+    overflow: auto;
+    padding: 0;
+    color: #333;
+    background: #f8f8f8; }
+    .article > .content pre .gutter, .article > .content .highlight .gutter {
+      text-align: right; }
+      .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
+        background-color: #f0f0f0;
+        padding: 0 10px; }
+    .article > .content pre .code, .article > .content .highlight .code {
+      padding: 0 10px; }
+  .article > .content ul, .article > .content ol {
+    margin: 10px 0; }
+    .article > .content ul > li, .article > .content ol > li {
+      padding-left: 20px;
+      position: relative; }
+      .article > .content ul > li::before, .article > .content ol > li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 15px;
+        margin-top: -3px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #444; }
+  .article > .content a {
+    color: #f0534e; }
+  .article > .content blockquote {
+    margin: 10px 0;
+    padding: 0 15px;
+    color: #666;
+    border-left: 4px solid #ddd; }
+  .article > .content * {
+    max-width: 100%; }
+  .article > footer {
+    padding: 40px 0;
+    margin-top: 20px;
+    border-top: solid 1px #eee; }
+    .article > footer > .link {
+      font-size: 16px;
+      line-height: 22px; }
+  @media screen and (max-width: 800px) {
+    .article {
+      padding: 20px; } }
+
+.archive {
+  padding: 80px 160px;
+  background-color: white; }
+
+.archive-category > .title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600; }
+
+.archive-category > .menu {
+  margin-bottom: 80px; }
+  .archive-category > .menu > li {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 30px; }
+    .archive-category > .menu > li > a {
+      display: flex; }
+      .archive-category > .menu > li > a > span {
+        flex: 1; }
+      .archive-category > .menu > li > a:hover {
+        opacity: 1; }
+        .archive-category > .menu > li > a:hover > span {
+          color: #f0534e; }
+    .archive-category > .menu > li > span {
+      opacity: .45; }
