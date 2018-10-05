@@ -196,64 +196,65 @@ body {
   .article > .sub {
     opacity: .5;
     margin-bottom: 20px; }
-  .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px; }
-  .article > .content p {
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 15px; }
-  .article > .content pre, .article > .content .highlight {
-    overflow: auto;
-    padding: 0;
-    margin-bottom: 15px;
-    color: #333;
-    background: #f8f8f8; }
-    .article > .content pre .gutter, .article > .content .highlight .gutter {
-      text-align: right; }
-      .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
-        background-color: #f0f0f0;
+  .article > .content {
+    padding-bottom: 64px; }
+    .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px; }
+    .article > .content p {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 15px; }
+    .article > .content pre, .article > .content .highlight {
+      overflow: auto;
+      padding: 0;
+      margin-bottom: 15px;
+      color: #333;
+      background: #f8f8f8; }
+      .article > .content pre .gutter, .article > .content .highlight .gutter {
+        text-align: right; }
+        .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
+          background-color: #f0f0f0;
+          padding: 0 10px; }
+      .article > .content pre .code, .article > .content .highlight .code {
         padding: 0 10px; }
-    .article > .content pre .code, .article > .content .highlight .code {
-      padding: 0 10px; }
-  .article > .content ul, .article > .content ol {
-    margin: 15px 0; }
-    .article > .content ul > li, .article > .content ol > li {
-      padding-left: 30px;
-      position: relative; }
-      .article > .content ul > li::before, .article > .content ol > li::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 15px;
-        margin-top: -3px;
-        width: 6px;
-        height: 6px;
-        border-radius: 100%;
-        background-color: #444; }
-  .article > .content a {
-    color: #f0534e; }
-  .article > .content strong {
-    font-weight: 600; }
-  .article > .content figure > img {
-    display: block; }
-  .article > .content figcaption {
-    font-size: 14px; }
-  .article > .content blockquote {
-    border-left: 4px solid #ddd;
-    color: #7a7a7a;
-    border-left: 5px solid #ccc;
-    padding-left: 15px;
-    font-size: 16px;
-    margin-bottom: 15px; }
-    .article > .content blockquote > :last-child {
-      margin-bottom: 0; }
-  .article > .content * {
-    max-width: 100%; }
+    .article > .content ul, .article > .content ol {
+      margin: 15px 0; }
+      .article > .content ul > li, .article > .content ol > li {
+        padding-left: 30px;
+        position: relative; }
+        .article > .content ul > li::before, .article > .content ol > li::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 15px;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          background-color: #444; }
+    .article > .content a {
+      color: #f0534e; }
+    .article > .content strong {
+      font-weight: 600; }
+    .article > .content figure > img {
+      display: block; }
+    .article > .content figcaption {
+      font-size: 14px; }
+    .article > .content blockquote {
+      border-left: 4px solid #ddd;
+      color: #7a7a7a;
+      border-left: 5px solid #ccc;
+      padding-left: 15px;
+      font-size: 16px;
+      margin-bottom: 15px; }
+      .article > .content blockquote > :last-child {
+        margin-bottom: 0; }
+    .article > .content * {
+      max-width: 100%; }
   .article > footer {
     padding: 40px 0;
-    margin-top: 80px;
     border-top: solid 1px #eee; }
     .article > footer > .link {
       font-size: 16px;
@@ -287,6 +288,9 @@ body {
           color: #f0534e; }
     .archive-category > .menu > li > span {
       opacity: .45; }
+
+.archive-category:last-child > .menu {
+  margin-bottom: 0; }
 
 .about {
   background-color: white;
