@@ -16,6 +16,36 @@ a {
 body {
   font-family: "PingFang SC"; }
 
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("/fonts/BebasNeue.otf"); }
+
+@font-face {
+  font-family: 'MaturaScriptCapitals';
+  src: url("/fonts/MaturaScriptCapitals.ttf"); }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 861369 */
+  src: url("//at.alicdn.com/t/font_861369_7w8v7jbwmvc.eot");
+  src: url("//at.alicdn.com/t/font_861369_7w8v7jbwmvc.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_7w8v7jbwmvc.woff") format("woff"), url("//at.alicdn.com/t/font_861369_7w8v7jbwmvc.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_7w8v7jbwmvc.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+  .iconfont.icon-behance::before {
+    content: '\e919'; }
+  .iconfont.icon-lofter::before {
+    content: '\e63c'; }
+  .iconfont.icon-instagram::before {
+    content: '\e626'; }
+  .iconfont.icon-dribbble::before {
+    content: '\e6c3'; }
+
 .f-fl {
   float: left; }
 
@@ -37,7 +67,7 @@ body {
     font-size: 40px;
     line-height: 53px;
     color: #333;
-    font-family: MaturaMTScriptCapitals; }
+    font-family: MaturaScriptCapitals; }
     #nav > .title:hover {
       opacity: .7; }
   #nav > .ctnWrap {
@@ -45,9 +75,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-between; }
     #nav > .ctnWrap > .menu {
-      min-width: 320px; }
+      min-width: 320px;
+      text-align: right; }
   #nav .nav-menu {
-    font-weight: bold;
+    font-family: BebasNeue;
     font-size: 20px;
     line-height: 24px;
     color: #333;
@@ -68,6 +99,9 @@ body {
       #nav .nav-menu {
         margin-left: 10px;
         font-size: 18px; } }
+  #nav .nav-icn {
+    margin-right: 20px;
+    line-height: 24px; }
 
 #footer {
   margin-top: 80px;
