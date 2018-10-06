@@ -27,8 +27,8 @@ body {
 @font-face {
   font-family: 'iconfont';
   /* project id 861369 */
-  src: url("//at.alicdn.com/t/font_861369_yniv9f4a4x.eot");
-  src: url("//at.alicdn.com/t/font_861369_yniv9f4a4x.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_yniv9f4a4x.woff") format("woff"), url("//at.alicdn.com/t/font_861369_yniv9f4a4x.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_yniv9f4a4x.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot");
+  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.woff") format("woff"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -47,6 +47,10 @@ body {
     content: '\e6c3'; }
   .iconfont.icon-github::before {
     content: '\e799'; }
+  .iconfont.icon-arrow-left::before {
+    content: '\e91a'; }
+  .iconfont.icon-arrow-right::before {
+    content: '\e636'; }
 
 .f-fl {
   float: left; }
@@ -110,6 +114,17 @@ body {
   font-size: 16px;
   line-height: 22px;
   opacity: 0.8; }
+
+.pagination {
+  padding: 20px;
+  background-color: white;
+  text-align: center; }
+  .pagination > .prev, .pagination > .next {
+    margin: 0 10px; }
+  .pagination > .page-number {
+    margin: 0 10px; }
+    .pagination > .page-number.current {
+      text-decoration: underline; }
 
 .project-card {
   display: flex;
