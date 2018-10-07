@@ -292,17 +292,17 @@ body {
   .archive-category > .menu > li {
     margin-top: 15px;
     font-size: 16px;
+    line-height: 30px;
+    display: flex;
     line-height: 30px; }
     .archive-category > .menu > li > a {
-      display: flex; }
-      .archive-category > .menu > li > a > span {
-        flex: 1; }
+      flex: 1; }
       .archive-category > .menu > li > a:hover {
-        opacity: 1; }
-        .archive-category > .menu > li > a:hover > span {
-          color: #f0534e; }
+        opacity: 1;
+        color: #f0534e; }
     .archive-category > .menu > li > span {
-      opacity: .45; }
+      opacity: .45;
+      font-size: 14px; }
 
 .archive-category:last-child > .menu {
   margin-bottom: 0; }
