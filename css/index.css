@@ -67,21 +67,20 @@ body {
 
 #nav {
   margin-bottom: 64px; }
-  #nav > .title {
-    display: block;
-    margin-bottom: 25px;
-    font-size: 40px;
-    line-height: 53px;
-    color: #333;
-    font-family: MaturaScriptCapitals; }
-    #nav > .title:hover {
-      opacity: .7; }
+  #nav > .header {
+    margin-bottom: 25px; }
+    #nav > .header > .title {
+      font-size: 40px;
+      line-height: 53px;
+      color: #333;
+      font-family: MaturaScriptCapitals; }
+      #nav > .header > .title:hover {
+        opacity: .7; }
   #nav > .ctnWrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     #nav > .ctnWrap > .menu {
-      min-width: 320px;
       text-align: right; }
   #nav .nav-menu {
     font-family: BebasNeue;
@@ -108,6 +107,13 @@ body {
   #nav .nav-icn {
     margin-right: 20px;
     line-height: 24px; }
+    #nav .nav-icn:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 400px) {
+    #nav {
+      text-align: center; }
+      #nav > .ctnWrap {
+        justify-content: space-around; } }
 
 #footer {
   margin-top: 80px;
@@ -148,6 +154,9 @@ body {
       font-weight: 600;
       font-size: 28px;
       line-height: 40px; }
+      .project-card > .ctnWrap > .title:hover {
+        opacity: 1;
+        color: #f0534e; }
     .project-card > .ctnWrap > .desc {
       font-size: 16px;
       line-height: 30px;
@@ -157,10 +166,6 @@ body {
       font-size: 16px;
       line-height: 30px;
       opacity: .5; }
-  .project-card:hover {
-    opacity: 1; }
-    .project-card:hover > .ctnWrap > .title {
-      color: #f0534e; }
   .project-card.project-card-continuous {
     flex-direction: row-reverse;
     margin: 0;
@@ -276,11 +281,14 @@ body {
       line-height: 22px; }
   @media screen and (max-width: 800px) {
     .article {
-      padding: 20px; } }
+      padding: 20px 20px 0; } }
 
 .archive {
   padding: 80px 160px;
   background-color: white; }
+  @media screen and (max-width: 800px) {
+    .archive {
+      padding: 20px; } }
 
 .archive-category > .title {
   font-size: 28px;
@@ -294,15 +302,16 @@ body {
     font-size: 16px;
     line-height: 30px;
     display: flex;
+    justify-content: space-between;
     line-height: 30px; }
-    .archive-category > .menu > li > a {
-      flex: 1; }
-      .archive-category > .menu > li > a:hover {
-        opacity: 1;
-        color: #f0534e; }
+    .archive-category > .menu > li > a:hover {
+      opacity: 1;
+      color: #f0534e; }
     .archive-category > .menu > li > span {
       opacity: .45;
-      font-size: 14px; }
+      font-size: 14px;
+      min-width: 90px;
+      text-align: right; }
 
 .archive-category:last-child > .menu {
   margin-bottom: 0; }
