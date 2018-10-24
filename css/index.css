@@ -1,8 +1,12 @@
 @import url(reset.css);
 #container {
-  max-width: 1080px;
+  max-width: 980px;
   margin: 90px auto 75px;
   padding: 0 15px; }
+  @media screen and (max-width: 600px) {
+    #container {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 
 #panel {
   background-color: white; }
@@ -14,7 +18,7 @@ a {
     opacity: .7; }
 
 body {
-  font-family: "PingFang SC"; }
+  font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
 
 @font-face {
   font-family: 'BebasNeue';
@@ -68,9 +72,9 @@ body {
 #nav {
   margin-bottom: 64px; }
   #nav > .header {
-    margin-bottom: 25px; }
+    margin-bottom: 10px; }
     #nav > .header > .title {
-      font-size: 40px;
+      font-size: 45px;
       line-height: 53px;
       color: #333;
       font-family: MaturaScriptCapitals; }
@@ -82,6 +86,12 @@ body {
     justify-content: space-between; }
     #nav > .ctnWrap > .menu {
       text-align: right; }
+    @media screen and (max-width: 600px) {
+      #nav > .ctnWrap {
+        flex-direction: column; }
+        #nav > .ctnWrap > .menu {
+          text-align: center;
+          margin-top: 10px; } }
   #nav .nav-menu {
     font-family: BebasNeue;
     font-size: 20px;
@@ -100,26 +110,36 @@ body {
         bottom: -4px;
         height: 2px;
         background-color: #333; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
       #nav .nav-menu {
         margin-left: 10px;
         font-size: 18px; } }
   #nav .nav-icn {
-    margin-right: 20px;
+    margin-right: 15px;
     line-height: 24px; }
     #nav .nav-icn:last-child {
       margin-right: 0; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     #nav {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20px; }
       #nav > .ctnWrap {
         justify-content: space-around; } }
 
 #footer {
   margin-top: 80px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   opacity: 0.8; }
+  #footer .copyright {
+    float: right; }
+  @media screen and (max-width: 800px) {
+    #footer {
+      margin-top: 20px;
+      text-align: center; }
+      #footer .copyright {
+        display: block;
+        float: none; } }
 
 .pagination {
   padding: 20px;
@@ -180,8 +200,8 @@ body {
       right: 100px;
       bottom: 0;
       height: 1px;
-      background-color: #eee; }
-    @media screen and (max-width: 800px) {
+      background-color: #e5e5e5; }
+    @media screen and (max-width: 600px) {
       .project-card.project-card-continuous {
         flex-direction: column;
         padding: 20px; }
@@ -191,10 +211,11 @@ body {
         .project-card.project-card-continuous::after {
           left: 20px;
           right: 20px; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .project-card {
       flex-direction: column;
-      padding: 20px; }
+      padding: 20px;
+      margin: 10px 0; }
       .project-card > .imgWrap {
         margin-left: 0;
         margin-right: 0;
@@ -219,8 +240,9 @@ body {
   .article > .content {
     padding-bottom: 64px; }
     .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5 {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 600;
+      line-height: 40px;
       margin-bottom: 15px; }
     .article > .content p {
       font-size: 16px;
@@ -240,9 +262,10 @@ body {
       .article > .content pre .code, .article > .content .highlight .code {
         padding: 0 10px; }
     .article > .content ul, .article > .content ol {
-      margin: 15px 0; }
+      margin: 15px 0;
+      margin-left: 15px; }
       .article > .content ul > li, .article > .content ol > li {
-        padding-left: 30px;
+        padding-left: 20px;
         position: relative; }
         .article > .content ul > li::before, .article > .content ol > li::before {
           content: '';
@@ -278,15 +301,19 @@ body {
     border-top: solid 1px #eee; }
     .article > footer > .link {
       font-size: 16px;
-      line-height: 22px; }
-  @media screen and (max-width: 800px) {
+      line-height: 22px;
+      max-width: 50%; }
+  @media screen and (max-width: 600px) {
     .article {
-      padding: 20px 20px 0; } }
+      padding: 20px 20px 0;
+      margin: 20px 0; }
+      .article > footer {
+        padding: 10px 0; } }
 
 .archive {
   padding: 80px 160px;
   background-color: white; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .archive {
       padding: 20px; } }
 
@@ -296,14 +323,14 @@ body {
   font-weight: 600; }
 
 .archive-category > .menu {
-  margin-bottom: 80px; }
+  margin-bottom: 70px; }
   .archive-category > .menu > li {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     display: flex;
     justify-content: space-between;
-    line-height: 30px; }
+    line-height: 24px; }
     .archive-category > .menu > li > a:hover {
       opacity: 1;
       color: #f0534e; }
