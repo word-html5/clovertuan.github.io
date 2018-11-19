@@ -31,8 +31,8 @@ body {
 @font-face {
   font-family: 'iconfont';
   /* project id 861369 */
-  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot");
-  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.woff") format("woff"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_861369_ceqcqtwid2r.eot");
+  src: url("//at.alicdn.com/t/font_861369_ceqcqtwid2r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_ceqcqtwid2r.woff") format("woff"), url("//at.alicdn.com/t/font_861369_ceqcqtwid2r.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_ceqcqtwid2r.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -49,6 +49,8 @@ body {
     content: '\e626'; }
   .iconfont.icon-dribbble::before {
     content: '\e6c3'; }
+  .iconfont.icon-zcool::before {
+    content: '\e6be'; }
   .iconfont.icon-github::before {
     content: '\e799'; }
   .iconfont.icon-arrow-left::before {
@@ -74,7 +76,7 @@ body {
   #nav > .header {
     margin-bottom: 10px; }
     #nav > .header > .title {
-      font-size: 45px;
+      font-size: 40px;
       line-height: 53px;
       color: #333;
       font-family: MaturaScriptCapitals; }
@@ -130,7 +132,8 @@ body {
   margin-top: 80px;
   font-size: 14px;
   line-height: 22px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  color: #333; }
   #footer .copyright {
     float: right; }
   @media screen and (max-width: 800px) {
